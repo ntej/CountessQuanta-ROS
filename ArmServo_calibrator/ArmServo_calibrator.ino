@@ -1,4 +1,4 @@
-
+/*Author : Saroj */
 
 /* Program was design to controll 3 servos
 and using serial instructions by sending first 

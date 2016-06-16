@@ -1,0 +1,9 @@
+Step 1 : Install rosaris package 
+
+Step 2 : Connect the robot and turn on, and then check to which serial port it is connected using command  $dmesg |grep tty 
+
+Step 4:  Considering robot is conected to /dev/ttyUSB0, Change the permission of /dev/ttyUSB0 using command  $sudo chmod 666 /dev/ttyUSB0
+
+Step 3 : run the rosaria package, $rosrun rosaria RosAria _port:=/dev/ttyUSB0
+
+Note : Do not need drivers for Belkin serial to usb adapter on ubuntu

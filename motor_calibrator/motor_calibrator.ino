@@ -1,3 +1,4 @@
+/*Author : NavatejaReddy*/
 #include <Wire.h>
 
 #define DEVICE_ADDRESS 0x05

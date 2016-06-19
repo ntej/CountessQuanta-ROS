@@ -9,7 +9,8 @@
 #define RIGHT_ANGULAR_VELOCITY -0.1 //sets angular velocity
 #define LEFT_ANGULAR_VELOCITY 0.1 //sets angular velocity
 #define ANGLE_IN_DEGREES 1.5708 //defines the angle(in degrees) to turn the pioneer
-#define SYSTAMATIC_ERROR 1.03  //to correct error of distance covered with defined linear velocity by multiplying with temptime measued during runtime 
+#define SYSTAMATIC_ERROR 1.03  //to correct error of distance covered with defined linear velocity by multiplying with temptime measued
+//during runtime 
 
 ros::Publisher pub;
 ros::Publisher arduino_pub;
@@ -130,7 +131,8 @@ int main(int argc, char **argv)
 {
  ros::init(argc, argv, "pioneer_server");
  ros::NodeHandle n; 
- pub = n.advertise<geometry_msgs::Twist>("/RosAria/cmd_vel",100); // "packagename*/cmd_vel" topic with message type "geometry_msgs/twist"|subscribing topic
+ pub = n.advertise<geometry_msgs::Twist>("/RosAria/cmd_vel",100); // "packagename*/cmd_vel" topic with message 
+ //type "geometry_msgs/twist"|subscribing to topic
  arduino_pub=n.advertise<std_msgs::Empty>("run_arm_seq",100); //subscribing to arduino node
  ros::ServiceServer service = n.advertiseService("move_pioneer",move);
  ROS_INFO("Ready to move pioneer base, Give xpos and zpos of the detected object");

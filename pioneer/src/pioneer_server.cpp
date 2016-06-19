@@ -113,7 +113,7 @@ else if(x_position < 0)
  pub.publish(msg);
 }
 
-/*-------------------------object is facing stright to the robot------------------*/
+/*-------------------------object is facing straight to the robot------------------*/
 else
 {
  std::cerr << "X == 0" << std::endl;

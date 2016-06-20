@@ -8,6 +8,7 @@ servo_calibrator = Arduino code to calibrate the servos in the lower arm
 
 i2cmotor_servo_contoller_ros = ROS node with topic "run_arm_seq". Any node which publishes empty message on topic "run_arm_seq" runs the arm sequence of picking up the object
 
+Documentation: Refer Documentation/saroj_final_doc.pdf for Arm design.  For upto date details Refer Documentation/documentation.pdf  
 
 ![Alt text](https://github.com/ntej/CountessQuanta-ROS/blob/master/Images/rosgraph.png "Countess Qunata")
 
